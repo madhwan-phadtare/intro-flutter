@@ -7,11 +7,43 @@ class HOMEPAGE extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Center(
-        child: Text("hello Welcome to $day day Chalange with $name"),
+        body: Center(
+      child: Padding(
+        padding: EdgeInsets.all(100.0),
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: CircleAvatar(
+                radius: 100,
+                backgroundColor: Colors.cyan,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text(
+                "Madhwan Phadtare",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Text(
+                "Flutter and React Developer",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+            )
+          ],
+        ),
       ),
-      drawer: Drawer(),
-    );
+    ));
   }
 }
