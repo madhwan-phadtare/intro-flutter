@@ -9,7 +9,7 @@ class HOMEPAGE extends StatelessWidget {
     return Scaffold(
         body: Center(
       child: Padding(
-        padding: EdgeInsets.all(100.0),
+        padding: EdgeInsets.all(10.0),
         child: Column(
           children: [
             Padding(
@@ -39,6 +39,20 @@ class HOMEPAGE extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: Colors.blue,
                 ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: ListTile(
+                leading: Icon(Icons.phone),
+                title: Text("+91-8319012542"),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: ListTile(
+                leading: Icon(Icons.mail),
+                title: Text("madhwanphadtere.123@gmail.com"),
               ),
             )
           ],
